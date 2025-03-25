@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-color: black;
+    scrollbar-width: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(177, 157, 47);
+}
+
+.logo-img {
+    height: 70%;
+}
+
+.logo-img:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 9vh;
+}
+
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.menu-item.active a {
+    color: rgb(177, 157, 47);
+}
+
+.photo-collection-wrapper {
+    overflow: hidden;
+    margin-bottom: 0;
+    height: 82vh;
+}
+
+.photo {
+    width: 100%;
+}
+
+#play {
+    position: absolute;
+    z-index: 7;
+    width: 160px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#play:hover {
+    filter: invert(26%) sepia(15%) saturate(200%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+#pause {
+    position: absolute;
+    z-index: 7;
+    width: 160px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#pause:hover {
+    filter: invert(26%) sepia(15%) saturate(200%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 9vh;
+    font-size: 20px;
+}
+
+.copyrights {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.rssschool-logo {
+    height: 70%;
+}
+
