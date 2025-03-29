@@ -8,6 +8,12 @@ body {
     color: #c9b56e;
 }
 
+a {
+    text-decoration: none;
+    color: #c9b56e;
+}
+
+
 .video-title {
     overflow: hidden;
     font-size: 34px;
@@ -45,8 +51,11 @@ body {
     width: 70%;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(230, 221, 167);
-    
+    border: 1px solid rgb(230, 221, 167);   
+}
+
+.video {
+    position: relative;
 }
 
 video {
@@ -59,42 +68,106 @@ video {
 .navigation-line {
     display: flex;
     flex-direction: row;
-    justify-content: justify;
+    align-items: center;
     width: 100%;
     height: 3rem;
 }
 
-#play-btn {
+#big-play-btn {
     position: absolute;
-    width: 10%;
+    width: 15%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 2;
 }
 
 .play-and-pause {
     position: relative;
+    cursor: pointer;
 }
 
-#play {
+#play, #pause {
     position: absolute;
-    margin-left: 0;
+    top: 50%; transform: translateY(-50%);
+    
 }
 
-#pause {
-    position: absolute;
-    margin-left: 0;
+#pause, #mute {
+    display: none;
 }
+
+.video-progress-container {
+    width: 50%;
+}
+
+#video-progress-bar {
+    width: 100%;
+    height: 8px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #c2c0b9;
+}
+
+#video-progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+}
+
+
+
+.mic-and-mute {
+    position: relative;
+    cursor: pointer;
+}
+
+#mic, #mute {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+}
+
+.volume-container {
+    width: 25%
+}
+
+#volume-progress-bar {
+    appearance: none;
+    background-color: #c2c0b9;
+    width: 100%;
+    height: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+#volume-progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
 
 footer {
+    width: 70%;
     height: 10vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    padding: 0 2rem; 
+    font-size: 20px;
 }
 
-footer > div {
+.copyrights {
     display: flex;
-    flex-direction: row;
     gap: 1rem;
+}
+
+#rs-school-logo {
+    margin-left: auto;
 }

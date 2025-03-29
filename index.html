@@ -13,31 +13,41 @@
     </div>
 
     <div class="video-container">
-        <img id="play-btn" src="assets/svg/play-btn.svg" alt="play-btn">
-        <video src="assets/video/video.mp4"></video>
+        <div class="video">
+            <img id="big-play-btn" src="assets/svg/play-btn.svg" alt="play-btn">
+            <video id="main-video" src="assets/video/video.mp4" alt="video"></video>
+        </div> 
 
         <div class="navigation-line">
             <div class="play-and-pause">
                 <img id="play" src="assets/svg/play.svg" alt="play">
                 <img id="pause" src="assets/svg/pause.svg" alt="pause">
             </div>
-            
 
-            <div class=""></div>
+            <div class="video-progress-container">
+                <input type="range" id="video-progress-bar" value="0" max="100">
+                <span id="current-time" class="progress-time"></span>
+                <span id="duration-time"></span>
+            </div>
 
-            <img src="assets/svg/volume.svg" alt="mic">
-            <img src="assets/svg/mute.svg" alt="mute">
+            <div class="mic-and-mute">
+                <img id="mic" src="assets/svg/volume.svg" alt="mic">
+                <img id="mute" src="assets/svg/mute.svg" alt="mute">    
+            </div>
 
-            <div class=""></div>
+            <div class="volume-container">
+                <input type="range" id="volume-progress-bar" value="0" max="100">
+            </div>
 
         </div>
     </div>
+<script src="script.js"></script>
 </body>
 <footer>
-    <div>
-        <p>&copy; 2024</p>
-        <p href="">github</p>
+    <div class="copyrights">
+        <p>&copy; 2025</p>
+        <a href="https://github.com/t-gladkaya">github</a>
     </div>
-    <div class="rsschool-logo">Rolling Scopes School</div>
+    <div id="rs-school-logo"><a href="https://rs.school/courses">Rolling Scopes School</a></div>
 </footer>
 </html>
