@@ -60,7 +60,7 @@ body {
 
 .quotes-block {
     width: 80%;
-    height: 83%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.518);
     position: absolute;
     top: 50%;
@@ -102,7 +102,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    height: 90%;
+    height: 80%;
     background-color: rgba(7, 6, 6, 0.627);
     text-align: center;
 }
@@ -120,7 +120,7 @@ body {
 }
 
 .chill-guy {
-    height: 100%;
+    height: 80%;
 }
 
 #chill-guy {
