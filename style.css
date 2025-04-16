@@ -80,12 +80,22 @@ body {
     justify-content: center;
 }
 
-.search-line button::before {
+.search-line button.search::before {
     content: "";
     display: block;
     width: 25px;
     height: 25px;
     background-image: url("assets/img/search.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.search-line button.close::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("assets/img/close.png");
     background-size: contain;
     background-repeat: no-repeat;
 }

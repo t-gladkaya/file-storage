@@ -3,10 +3,12 @@ const accessKey = "XYEZsj84hfngAfPYTLI5C87oSCunjO7CwgSm7vOIclw";
 const form = document.getElementById("search-form");
 const input = document.getElementById("search-input");
 const gallery = document.querySelector(".img-gallery");
+const button = document.getElementById("search-button");
 
 window.addEventListener("DOMContentLoaded", () => {
     input.focus();
     fetchRandomImages();
+    button.classList.add("search");
 });
 
 form.addEventListener("submit", function (e) {
@@ -14,8 +16,22 @@ form.addEventListener("submit", function (e) {
     const query = input.value.trim();
     if (query) {
         fetchImages(query);
+        button.classList.remove("search");
+        button.classList.add("close");
     }
 });
+
+button.addEventListener("click", (e) => {
+    if (button.classList.contains("close")) {
+        e.preventDefault();
+        input.value = "";
+        input.focus();
+        button.classList.remove("close");
+        button.classList.add("search");
+    }
+});
+
+
 async function fetchRandomImages() {
     try {
         const url = `https://api.unsplash.com/photos/random?count=30&client_id=${accessKey}`;
