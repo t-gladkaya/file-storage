@@ -21,6 +21,14 @@ form.addEventListener("submit", function (e) {
     }
 });
 
+input.addEventListener("input", () => {
+    const query = input.value.trim();
+    if (query === "") {
+        button.classList.remove("close");
+        button.classList.add("search");
+    }
+});
+
 button.addEventListener("click", (e) => {
     if (button.classList.contains("close")) {
         e.preventDefault();
