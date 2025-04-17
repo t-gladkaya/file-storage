@@ -36,6 +36,7 @@ button.addEventListener("click", (e) => {
         input.focus();
         button.classList.remove("close");
         button.classList.add("search");
+        fetchRandomImages();
     }
 });
 
