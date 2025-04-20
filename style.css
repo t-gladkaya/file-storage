@@ -77,6 +77,7 @@ body {
 
 .container {
     margin: 0 auto;
+    padding-bottom: 2rem;
     width: 85%;
     background-color: rgba(0, 0, 0, 0.059);
 }
@@ -157,11 +158,14 @@ body {
 #load-more {
    height: 3rem;
    width: 10rem;
-   border-radius: 20px;
    background-color: transparent;
    outline: none;
    border: none;
    font-size: 20px;
    color: beige;
    margin: 0 auto;
+}
+
+#load-more:hover {
+    background-color: rgba(20, 20, 92, 0.475);
 }
