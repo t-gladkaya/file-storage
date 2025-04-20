@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/movie.png">
+    <title>Movie app</title>
+</head>
+<body>
+    <div class="header">
+        <div class="search-line">
+            <form id="search-form" class="search-form">
+                <input type="text" placeholder="Search..." id="search-input" autocomplete="off">
+                <button type="submit" id="search-button"></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container" >
+        <div id="movie-gallery" class="movie-gallery"></div>
+        <button id="load-more" style="display: none;">Show more ↓</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
