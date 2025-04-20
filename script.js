@@ -107,7 +107,7 @@ function createMovieCard(movie) {
     const moviePoster = document.createElement("div");
     moviePoster.classList.add("movie-poster");
     const posterImg = document.createElement("img");
-    posterImg.src = movie.Poster !== "N/A" ? movie.Poster : "assets/img/placeholder.png";
+    posterImg.src = movie.Poster !== "N/A" ? movie.Poster : "assets/img/placeholder.jpg";
     moviePoster.appendChild(posterImg);
 
     const movieInfo = document.createElement("div");
