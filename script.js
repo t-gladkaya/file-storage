@@ -35,7 +35,6 @@ window.addEventListener("DOMContentLoaded", () => {
     overlay.style.display = "block";
     choosePlayerMessage.style.display = "none";
 
-    // Один раз навешиваем обработчики на клетки
     tableCells.forEach(cell => {
         cell.addEventListener("click", () => handleCellClick(cell));
     });
