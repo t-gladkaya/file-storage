@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/fav.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Georgian:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+    <div class="overlay"></div>
+    <div class="start-message">
+        <div>Ready to start a new game?</div>
+        <form id="start-message-form">
+            <button id="start-message-button" type="submit">Yes!</button>
+        </form>
+    </div>
+
+    <div class="who-starts-message">
+        <div>Who should start?</div>
+        <div class="who-starts-block">
+            <button id="who-starts-player-1-button"><img src="assets/img/croissant.png" alt="croissant-team"></button>
+            <button id="who-starts-player-2-button"><img src="assets/img/zero.png" alt="bagel-team"></button>
+        </div>
+    </div>
+
+    <div class="win-message" style="display: none;"></div>
+    <button id="start-new-game" style="display: none;">START A NEW GAME</button>
+
+    <div class="container">
+        <div id="title"> Tic-tac-toe</div>
+
+        <div class="game-area">
+            <table id="game-table">
+                <tbody>
+                    <tr>
+                        <th class="table-cell 1" id="1"></th>
+                        <th class="table-cell 2" id="2"></th>
+                        <th class="table-cell 3" id="3"></th>
+                    </tr>
+                    <tr>
+                        <th class="table-cell 3" id="4"></th>
+                        <th class="table-cell 4" id="5"></th>
+                        <th class="table-cell 5" id="6"></th>
+                    </tr>
+                    <tr>
+                        <th class="table-cell 6" id="7"></th>
+                        <th class="table-cell 7" id="8"></th>
+                        <th class="table-cell 8" id="9"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="players-and-score">
+            <table id="score-table">
+                <colgroup>
+                    <col class="left-column">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="player-1"><img id="croissant" src="assets/img/croissant.png" alt="croissant">Team</th>
+                        <th class="player-2"><img id="bagel" src="assets/img/zero.png" alt="Bagel">Team</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="croissantTotalWin">0</td>
+                        <td id="bagelTotalWin">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+</footer>
+</html>
