@@ -105,7 +105,7 @@ function gameOver() {
     if (allFlipped) {
         setTimeout(() => {
             tableCells.forEach(cell => {
-                cell.style.backgroundColor = "rgb(108, 208, 1)"; 
+                cell.style.backgroundColor = "rgb(133, 255, 2)"; 
                 restartButton.style.display = "block";
             });
         }, 1000);
